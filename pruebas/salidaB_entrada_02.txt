@@ -1,0 +1,253 @@
+INTRODUCIDO: [ A123456789 ] --- Evento A123456789 --- ( 1 )
+-----LISTADO: 1
+[ A123456789 --- 0 ] --- Evento A123456789 --- ( 1 )
+-----
+LOCALIZADO: [ A123456789 --- 0 ] --- Evento A123456789 --- ( 1 )
+INDEPendiente: A123456789
+YA ERA INDepend.: A123456789
+IMPOSIBLE hacer depend.: A123456789 -de-> a123456789
+IMPOSIBLE hacer depend.: A123456789 -de-> A012345678
+INTENTANDO hacer depend.: A123456789 -de-> A123456789
+****DEPENDIENTES: a123456789
+****DESCONOCIDO
+****DEPENDIENTES: A123456789
+[ A123456789 --- 0 ] --- Evento A123456789 --- ( 1 ) ****
+****FINAL dependientes -de-> A123456789
+-----LISTADO: 1
+[ A123456789 --- 0 ] --- Evento A123456789 --- ( 1 )
+-----
+CAMBIADO: [ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 )
+-----LISTADO: 1
+[ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 )
+-----
+LOCALIZADO: [ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 )
+INDEPendiente: A123456789
+YA ERA INDepend.: A123456789
+IMPOSIBLE hacer depend.: A123456789 -de-> a123456789
+****DEPENDIENTES: a123456789
+****DESCONOCIDO
+****DEPENDIENTES: A123456789
+[ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 ) ****
+****FINAL dependientes -de-> A123456789
+-----LISTADO: 1
+[ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 )
+-----
+NO BORRADO: a123456789
+-----LISTADO: 1
+[ A123456789 --- 0 ] --- nuevo evento A123456789 --- ( 2 )
+-----
+BORRADO: A123456789
+-----LISTADO: 0
+-----
+NO LOCALIZADO: A123456789
+DESCONOCIDO: A123456789
+NO INDEPENDIZADO: A123456789
+NO CAMBIADO: A123456789
+-----LISTADO: 0
+-----
+INTRODUCIDO: [ A_12345678 ] --- Evento A_12345678 --- ( 4 )
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- Evento A_12345678 --- ( 4 )
+-----
+NO INTRODUCIDO: [ c_12345678 -de-> a_12345678 ] --- Evento C --- ( 111 )
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- Evento A_12345678 --- ( 4 )
+-----
+INTRODUCIDO: [ B_12345678 -de-> A_12345678 ] --- Evento B --- ( 1 )
+-----LISTADO: 2
+[ A_12345678 --- 1 ] --- Evento A_12345678 --- ( 4 )
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- Evento B --- ( 1 )
+-----
+****DEPENDIENTES: B_12345678
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- Evento B --- ( 1 ) ****
+****FINAL dependientes -de-> B_12345678
+****DEPENDIENTES: A_12345678
+[ A_12345678 --- 1 ] --- Evento A_12345678 --- ( 4 ) ****
+[1 -> B_12345678 -de-> A_12345678 ;;; 0 ] --- Evento B --- ( 1 ) ;;;;
+****FINAL dependientes -de-> A_12345678
+CAMBIADO: [ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+-----LISTADO: 2
+[ A_12345678 --- 1 ] --- Evento A_12345678 --- ( 4 )
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+CAMBIADO: [ A_12345678 --- 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+-----LISTADO: 2
+[ A_12345678 --- 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+NO CAMBIADO: A123456789
+NO LOCALIZADO: A123456789
+DESCONOCIDO: A123456789
+NO INDEPENDIZADO: A123456789
+LOCALIZADO: [ A_12345678 --- 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+INDEPendiente: A_12345678
+YA ERA INDepend.: A_12345678
+LOCALIZADO: [ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+DEPendiente: B_12345678
+INDEPENDIZADO: B_12345678
+-----LISTADO: 2
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 --- 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+****DEPENDIENTES: A_12345678
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 ) ****
+****FINAL dependientes -de-> A_12345678
+****DEPENDIENTES: B_12345678
+[ B_12345678 --- 0 ] --- ver 2 Evento B --- ( 2 ) ****
+****FINAL dependientes -de-> B_12345678
+****DEPENDIENTES: A123456789
+****DESCONOCIDO
+IMPOSIBLE hacer depend.: A_12345678 -de-> A123456789
+-----LISTADO: 2
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 --- 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+INTENTANDO hacer depend.: A_12345678 -de-> A_12345678
+-----LISTADO: 2
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 --- 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+INTENTANDO hacer depend.: A_12345678 -de-> B_12345678
+-----LISTADO: 2
+[ A_12345678 -de-> B_12345678 ;;; 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 --- 1 ] --- ver 2 Evento B --- ( 2 )
+-----
+INTENTANDO hacer depend.: B_12345678 -de-> A_12345678
+-----LISTADO: 2
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 )
+-----
+****DEPENDIENTES: A_12345678
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 ) ****
+[1 -> B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 ) ;;;;
+****FINAL dependientes -de-> A_12345678
+****DEPENDIENTES: B_12345678
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 ) ****
+[1 -> A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 ) ;;;;
+****FINAL dependientes -de-> B_12345678
+****DEPENDIENTES: A123456789
+****DESCONOCIDO
+NO BORRADO: A_12345678
+-----LISTADO: 2
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 )
+-----
+NO BORRADO: B_12345678
+-----LISTADO: 2
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 )
+-----
+NO BORRADO: A123456789
+-----LISTADO: 2
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 )
+-----
+****DEPENDIENTES: A_12345678
+[ A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 ) ****
+[1 -> B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 ) ;;;;
+****FINAL dependientes -de-> A_12345678
+****DEPENDIENTES: B_12345678
+[ B_12345678 -de-> A_12345678 ;;; 1 ] --- ver 2 Evento B --- ( 2 ) ****
+[1 -> A_12345678 -de-> B_12345678 ;;; 1 ] --- nueva ver Evento A_12345678 --- ( 5 ) ;;;;
+****FINAL dependientes -de-> B_12345678
+****DEPENDIENTES: A123456789
+****DESCONOCIDO
+INDEPENDIZADO: A_12345678
+-----LISTADO: 2
+[ A_12345678 --- 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+****DEPENDIENTES: B_12345678
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 ) ****
+****FINAL dependientes -de-> B_12345678
+NO BORRADO: A_12345678
+-----LISTADO: 2
+[ A_12345678 --- 1 ] --- nueva ver Evento A_12345678 --- ( 5 )
+[ B_12345678 -de-> A_12345678 ;;; 0 ] --- ver 2 Evento B --- ( 2 )
+-----
+BORRADO: B_12345678
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+-----
+NO BORRADO: A123456789
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+-----
+LOCALIZADO: [ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+INDEPendiente: A_12345678
+YA ERA INDepend.: A_12345678
+NO LOCALIZADO: B_12345678
+DESCONOCIDO: B_12345678
+NO INDEPENDIZADO: B_12345678
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 )
+-----
+****DEPENDIENTES: A_12345678
+[ A_12345678 --- 0 ] --- nueva ver Evento A_12345678 --- ( 5 ) ****
+****FINAL dependientes -de-> A_12345678
+****DEPENDIENTES: B_12345678
+****DESCONOCIDO
+****DEPENDIENTES: A123456789
+****DESCONOCIDO
+CAMBIADO: [ A_12345678 --- 0 ] --- otra nueva ver Evento A_12345678 --- ( 6 )
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- otra nueva ver Evento A_12345678 --- ( 6 )
+-----
+NO CAMBIADO: B_12345678
+-----LISTADO: 1
+[ A_12345678 --- 0 ] --- otra nueva ver Evento A_12345678 --- ( 6 )
+-----
+NO CAMBIADO: A123456789
+INTRODUCIDO: [ nombre compuesto ] --- Evento Z --- ( 21 )
+-----LISTADO: 2
+[ A_12345678 --- 0 ] --- otra nueva ver Evento A_12345678 --- ( 6 )
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+NO INTRODUCIDO: [ c_12345678 -de-> z_12345678 ] --- Evento C --- ( 111 )
+-----LISTADO: 2
+[ A_12345678 --- 0 ] --- otra nueva ver Evento A_12345678 --- ( 6 )
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+BORRADO: A_12345678
+-----LISTADO: 1
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+NO LOCALIZADO: A_12345678
+DESCONOCIDO: A_12345678
+NO INDEPENDIZADO: A_12345678
+NO LOCALIZADO: z_12345678
+DESCONOCIDO: z_12345678
+NO INDEPENDIZADO: z_12345678
+-----LISTADO: 1
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+****DEPENDIENTES: A_12345678
+****DESCONOCIDO
+****DEPENDIENTES: B_12345678
+****DESCONOCIDO
+****DEPENDIENTES: z_12345678
+****DESCONOCIDO
+-----LISTADO: 1
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+LOCALIZADO: [ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+INDEPendiente: nombre compuesto
+YA ERA INDepend.: nombre compuesto
+****DEPENDIENTES: nombre compuesto
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 ) ****
+****FINAL dependientes -de-> nombre compuesto
+-----LISTADO: 1
+[ nombre compuesto --- 0 ] --- Evento Z --- ( 21 )
+-----
+BORRADO: nombre compuesto
+-----LISTADO: 0
+-----
+NO LOCALIZADO: nombre compuesto
+DESCONOCIDO: nombre compuesto
+NO INDEPENDIZADO: nombre compuesto
+****DEPENDIENTES: nombre compuesto
+****DESCONOCIDO
+-----LISTADO: 0
+-----
+-----LISTADO: 0
+-----
